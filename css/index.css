@@ -76,14 +76,13 @@ html, body {
 	max-width: 1000px;
     margin: 0 auto;
     box-sizing: border-box;
-    width: 1000px;
 }
 
 @media (max-width: 800px){
     body{
         box-sizing: border-box;
         max-width: 800px;
-        margin: 0 auto;
+        margin: 0px;
     }
 }
 
@@ -91,6 +90,26 @@ html, body {
     body{
         box-sizing: border-box;
         max-width: 500px;
+    }
+}
+
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+@media(max-width: 800px){
+    .container{
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media(max-width: 500){
+    .container{
+        width: 100%;
+        margin: auto;
     }
 }
 
@@ -136,6 +155,8 @@ html, body {
     .LinkBar{
         display: flex;
         flex-direction: column;
+        max-width: auto;
+        margin-top: 15px;
     }
 }
     
@@ -144,15 +165,19 @@ a {
     display: flex;
     margin: 40px;
     color: grey;
+    
 }
 
 @media (max-width: 500px){
     a{
+        display: flex;
+        justify-content: center;
         align-self: center;
         border: 1px solid black;
-        padding: 20px 500px;
         margin: 0px;
         font-size: 20px;
+        padding: 20px;
+        inline-size: 100%;
     }
 }
 
